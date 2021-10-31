@@ -1,0 +1,52 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--  TODO Step 2: Add the more icon for Edit and Delete options. -->
+        <!-- START -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_dish_image"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="1dp"
+                android:contentDescription="@string/image_contentDescription"
+                android:scaleType="fitXY"
+                tools:src="@mipmap/ic_launcher" />
+
+            <ImageButton
+                android:id="@+id/ib_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_margin="5dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/image_contentDescription"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_more" />
+        </FrameLayout>
+        <!-- END -->
+        <TextView
+            android:id="@+id/tv_dish_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey_900"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Dish Title" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
