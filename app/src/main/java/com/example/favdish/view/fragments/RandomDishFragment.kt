@@ -54,8 +54,6 @@ class RandomDishFragment : Fragment() {
 
         randomDishViewModelObserver()
 
-        // TODO Step 2: Set the setOnRefreshListener of SwipeRefreshLayout as below and call the getRandomDishFromAPI function to get the new dish details on the same screen.
-        // START
         /**
          * Sets up a SwipeRefreshLayout.OnRefreshListener that is invoked when the user
          * performs a swipe-to-refresh gesture.
@@ -65,7 +63,7 @@ class RandomDishFragment : Fragment() {
             // The method calls setRefreshing(false) when it's finished.
             mRandomDishViewModel.getRandomRecipeFromAPI()
         }
-        // END
+
     }
 
     /**

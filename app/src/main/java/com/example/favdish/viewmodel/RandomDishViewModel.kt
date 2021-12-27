@@ -75,6 +75,4 @@ class RandomDishViewModel : ViewModel() {
                 })
         )
     }
-    // END
 }
-// END
